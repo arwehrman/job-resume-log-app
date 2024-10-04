@@ -7,7 +7,6 @@ Job Card will have the following:
 - delete/archive button
 */
 
-//TODO: define all types for job props
 interface JobProps {
   companyName: string;
   jobTitle: string;
