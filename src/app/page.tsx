@@ -1,7 +1,7 @@
 import styles from "./page.module.css";
-import JobList from "../components/jobList/jobList";
-import JobCard from "../components/jobCard/jobCard";
-import JobForm from "../components/jobForm/jobForm";
+import JobList from "../components/JobList/JobList";
+import JobCard from "../components/JobCard/JobCard";
+import JobForm from "../components/JobForm/JobForm";
 
 //TODO: Connect to a data API instead of hard coding here
 const jobs = [
