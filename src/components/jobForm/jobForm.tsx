@@ -1,20 +1,45 @@
+import Input from "./Input";
+//TODO: create handler function for form submit
+//TODO: add styles to form and inputs
+//REFACTOR: make button a reusable component
+//REFACTOR: make inputs into an object that is mapped into inputs
+//NOTE: this should or could probably be a page, hiding the form unless adding
+
 export default function JobForm() {
-  //TODO: create handler function for form submit
-  //TODO: create inputs for all job props
   return (
     <form>
       <h2>Add a job</h2>
       <div>
-        <label>
-          Company Name:
-          <input type="text"></input>
-        </label>
-        <label>
-          Job Title:
-          <input type="text"></input>
-        </label>
+        <Input label="Company Name" inputType="text" inputName="companyName" />
+        <Input label="Job Title" inputType="url" inputName="jobTitle" />
+        <Input label="Job Post Link" inputType="text" inputName="jobPostLink" />
+        <Input label="Interview" inputType="checkbox" inputName="interview" />
+        <Input
+          label="Interview Date"
+          inputType="date"
+          inputName="interviewDate"
+        />
+        <Input
+          label="Second Interview"
+          inputType="checkbox"
+          inputName="secondInterview"
+        />
+        <Input
+          label="Second Interview Date"
+          inputType="date"
+          inputName="secondInterviewDate"
+        />
+        <Input
+          label="Coding Exercise Submitted"
+          inputType="checkbox"
+          inputName="codingExercise"
+        />
+        <Input
+          label="Rejection Email Recieved"
+          inputType="checkbox"
+          inputName="rejectionEmail"
+        />
       </div>
-
       <button type="submit">Add Job</button>
     </form>
   );

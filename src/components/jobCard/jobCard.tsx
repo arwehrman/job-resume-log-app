@@ -5,17 +5,18 @@ Job Card will have the following:
 - job details
 - edit button
 - delete/archive button
+- refferal could be another object, like a contact
 */
 
 interface JobProps {
   companyName: string;
   jobTitle: string;
-  // postLink: string;
-  // dateApplied: Date;
-  // interview: boolean;
-  // intervewDate: Date;
-  // codingExercise: boolean;
-  // rejectionEmail: string;
+  postLink: string;
+  dateApplied: Date;
+  interview: boolean;
+  intervewDate: Date;
+  codingExercise: boolean;
+  rejectionEmail: string;
 }
 
 export default function JobCard({ companyName, jobTitle }: JobProps) {
@@ -24,8 +25,8 @@ export default function JobCard({ companyName, jobTitle }: JobProps) {
 
   return (
     <div className={jobCardStyles.jobCard}>
-      <p>{companyName}</p>
-      <p>{jobTitle}</p>
+      <p>Company Name: {companyName}</p>
+      <p>Job Title: {jobTitle}</p>
       <p>Job Post Link</p>
       <p>Date Applied</p>
       <p>Interview</p>
