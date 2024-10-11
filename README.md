@@ -1,7 +1,5 @@
 # README
 
-![Static Badge](https://img.shields.io/badge/storybook?logo=storybook)
-
 ## Introduction
 
 This app is a work in progress to use as a portfolio piece to showcase my React, TypesScript, CSS and StorybookJS skills as I look for my next developer role.
