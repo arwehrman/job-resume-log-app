@@ -4,32 +4,35 @@
     "jobTitle": "developer",
     "postLink": "www.example.com",
     "dateApplied": "date",
-    "interview": "false",
+    "interview": false,
     "intervewDate": "",
     "codingExercise": "",
-    "rejectionEmail": "false",
-    "referal": "false"
+    "rejectionEmail": false,
+    "referal": false,
+    "referalName": ""
   },
   {
     "companyName": "DEF",
     "jobTitle": "developer",
     "postLink": "www.example.com",
     "dateApplied": "date",
-    "interview": "false",
+    "interview": false,
     "intervewDate": "",
     "codingExercise": "",
-    "rejectionEmail": "false",
-    "referal": "false"
+    "rejectionEmail": false,
+    "referal": false,
+    "referalName": ""
   },
   {
     "companyName": "GHI",
     "jobTitle": "developer",
     "postLink": "www.example.com",
     "dateApplied": "date",
-    "interview": "false",
+    "interview": false,
     "intervewDate": "",
     "codingExercise": "",
-    "rejectionEmail": "false",
-    "referal": "false"
+    "rejectionEmail": false,
+    "referal": true,
+    "referalName": "Joe Smith"
   }
 ]

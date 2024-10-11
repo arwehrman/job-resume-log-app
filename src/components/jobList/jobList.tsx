@@ -1,6 +1,6 @@
-import { type ReactNode } from "react";
+import { type ReactNode } from 'react'
 
-import JobListStyles from "./jobList.module.css";
+import JobListStyles from './jobList.module.css'
 /* 
 Job List will have the following: 
 - list of jobs applied for
@@ -14,27 +14,27 @@ Job List will have the following:
 // this will eventually come from a data API
 
 type JobListProps<T> = {
-  items: T[];
-  renderItem: (item: T) => ReactNode;
-};
+  category: string
+  items: T[]
+  renderItem: (item: T) => ReactNode
+}
 
-export default function JobList<T>({ items, renderItem }: JobListProps<T>) {
+// TODO: category will be part of filter logic for the list
+// example: rejected (category) would filter the list by all applications marked rejected
+
+export default function JobList<T>({
+  items,
+  renderItem,
+  category
+}: JobListProps<T>) {
   return (
     <div className={JobListStyles.jobList}>
+      <h2>{category} Applications List: </h2>
       <ul>
         {items.map((item, i) => (
           <li key={i}>{renderItem(item)}</li>
         ))}
-        {/* <li>
-          <JobCard companyName="ABC" jobTitle="developer" />
-        </li>
-        <li>
-          <JobCard companyName="DEF" jobTitle="developer" />
-        </li>
-        <li>
-          <JobCard companyName="GHI" jobTitle="Senior Developer" />
-        </li> */}
       </ul>
     </div>
-  );
+  )
 }

@@ -1,3 +1,8 @@
 .jobList ul {
+  display: flex;
   list-style-type: none;
+}
+
+.rejected {
+  border: 3px solid red;
 }
