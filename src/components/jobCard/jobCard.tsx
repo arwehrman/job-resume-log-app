@@ -1,4 +1,4 @@
-import jobCardStyles from './jobCard.module.scss'
+import jobCardStyles from './JobCard.module.scss'
 
 /* 
 Job Card will have the following: 
@@ -16,7 +16,7 @@ interface JobProps {
   interview: boolean
   intervewDate: string
   codingExercise: boolean
-  rejectionEmail: string
+  rejectionEmail: boolean
   referal: boolean
   referalName: string
 }

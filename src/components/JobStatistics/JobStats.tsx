@@ -1,4 +1,4 @@
-import jobStatisticsStyles from './JobStatistics.module.css'
+import jobStatisticsStyles from './JobStats.module.css'
 
 type JobStatProps = {
   jobsApplied: number
@@ -21,7 +21,7 @@ export default function JobStatistics({
 }: JobStatProps) {
   return (
     <div className={jobStatisticsStyles.jobStats}>
-      <p>this will be a component with application statistics</p>
+      <h2>Job Search Stats</h2>
       <p>Total Jobs Applied: {jobsApplied}</p>
       <p>Total Active Applications: {totalActiveApplications}</p>
       <p>Total Application Rejections: {totalRejections}</p>
