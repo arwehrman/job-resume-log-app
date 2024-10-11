@@ -1,6 +1,6 @@
 # README
 
-![Static Badge](https://img.shields.io/?logo=storybook)
+![Static Badge](https://img.shields.io/badge/storybook?logo=storybook)
 
 ## Introduction
 
