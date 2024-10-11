@@ -1,3 +1,5 @@
+$text_color: #ff0bac;
+$job_title: #00bec5;
 :root {
   --background: #ffffff;
   --foreground: #171717;
@@ -17,7 +19,7 @@ body {
 }
 
 body {
-  color: var(--foreground);
+  color: $text_color;
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
   -webkit-font-smoothing: antialiased;

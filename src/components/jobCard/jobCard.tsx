@@ -1,4 +1,4 @@
-import jobCardStyles from './jobCard.module.css'
+import jobCardStyles from './jobCard.module.scss'
 
 /* 
 Job Card will have the following: 
