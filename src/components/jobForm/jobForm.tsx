@@ -1,4 +1,5 @@
-import Input from "./Input";
+import Input from './Input'
+import { type FormEvent } from 'react'
 //TODO: create handler function for form submit
 //TODO: add styles to form and inputs
 //REFACTOR: make button a reusable component
@@ -6,6 +7,10 @@ import Input from "./Input";
 //NOTE: this should or could probably be a page, hiding the form unless adding
 
 export default function JobForm() {
+  // function handleSubmit(event: FormEvent<HTMLElement>) {
+  //   event.preventDefault()
+  // }
+
   return (
     <form>
       <h2>Add a job</h2>
@@ -42,5 +47,5 @@ export default function JobForm() {
       </div>
       <button type="submit">Add Job</button>
     </form>
-  );
+  )
 }

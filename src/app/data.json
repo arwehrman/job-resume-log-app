@@ -1,0 +1,35 @@
+[
+  {
+    "companyName": "ABC",
+    "jobTitle": "developer",
+    "postLink": "www.example.com",
+    "dateApplied": "date",
+    "interview": "false",
+    "intervewDate": "",
+    "codingExercise": "",
+    "rejectionEmail": "false",
+    "referal": "false"
+  },
+  {
+    "companyName": "DEF",
+    "jobTitle": "developer",
+    "postLink": "www.example.com",
+    "dateApplied": "date",
+    "interview": "false",
+    "intervewDate": "",
+    "codingExercise": "",
+    "rejectionEmail": "false",
+    "referal": "false"
+  },
+  {
+    "companyName": "GHI",
+    "jobTitle": "developer",
+    "postLink": "www.example.com",
+    "dateApplied": "date",
+    "interview": "false",
+    "intervewDate": "",
+    "codingExercise": "",
+    "rejectionEmail": "false",
+    "referal": "false"
+  }
+]
