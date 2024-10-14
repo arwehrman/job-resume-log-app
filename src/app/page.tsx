@@ -1,11 +1,12 @@
 import styles from './page.module.css'
-import JobList from '../components/JobList/JobList'
-import JobCard from '../components/JobCard/JobCard'
-import JobForm from '../components/JobForm/JobForm'
-import JobStatistics from '../components/JobStatistics/JobStats'
+import JobList from './components/JobList/JobList'
+import JobCard from './components/JobCard/JobCard'
+import JobForm from './components/JobForm/JobForm'
+import JobStatistics from './components/JobStatistics/JobStats'
 import jobs from './data.json'
 
 //TODO: Connect to a data API instead of dummy data json feed
+//TODO: Solidfy CSS/SASS into coherent patterns
 
 // dummy data for stats will move API with rest of the data
 const stats = {
