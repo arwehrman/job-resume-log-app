@@ -2,7 +2,7 @@ import styles from './page.module.css'
 import JobList from '../components/JobList/JobList'
 import JobCard from '../components/JobCard/JobCard'
 import JobForm from '../components/JobForm/JobForm'
-import JobStatistics from '../components/JobStatistics/JobStatistics'
+import JobStatistics from '../components/JobStatistics/JobStats'
 import jobs from './data.json'
 
 //TODO: Connect to a data API instead of dummy data json feed

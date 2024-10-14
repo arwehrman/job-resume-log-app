@@ -4,6 +4,10 @@
 
 This app is a work in progress to use as a portfolio piece to showcase my React, TypesScript, CSS and StorybookJS skills as I look for my next developer role.
 
+## Tech Stack
+
+Next.js, React, TypeScript, Sass, Storybook
+
 ## Getting Started
 
 First, run the development server:
