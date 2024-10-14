@@ -3,6 +3,7 @@ import JobList from './components/JobList/JobList'
 import JobCard from './components/JobCard/JobCard'
 import JobForm from './components/JobForm/JobForm'
 import JobStatistics from './components/JobStatistics/JobStats'
+import Header from './components/Header/Header'
 import jobs from './data.json'
 
 //TODO: Connect to a data API instead of dummy data json feed
@@ -20,23 +21,42 @@ const stats = {
 }
 
 export default function Home() {
+  //REFACTOR: May refactor this into drier option
+  let rejectedJobs = jobs.filter((job) => {
+    return job.rejectionEmail
+  })
+
+  let activeJobs = jobs.filter((job) => {
+    return !job.rejectionEmail
+  })
+
   return (
     <div className={styles.page}>
+      <Header title="Mandy's Job Log" />
       <main className={styles.main}>
         <div>
-          <h1>Job Resume Log</h1>
           <section>
-            <JobList items={jobs} renderItem={JobCard} category="rejected" />
+            <JobList
+              items={activeJobs}
+              renderItem={JobCard}
+              isActive={true}
+              jobStatus="active"
+            />
           </section>
           <section>
-            <JobList items={jobs} renderItem={JobCard} category="active" />
-          </section>
-          <section>
-            <JobForm />
+            <JobList
+              items={rejectedJobs}
+              renderItem={JobCard}
+              isActive={false}
+              jobStatus="rejected"
+            />
           </section>
           <aside>
             <JobStatistics {...stats} />
           </aside>
+          <section>
+            <JobForm />
+          </section>
         </div>
       </main>
     </div>

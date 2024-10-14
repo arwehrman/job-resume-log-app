@@ -7,7 +7,7 @@ Job Card will have the following:
 - delete/archive button
 - referal could be another object, like a contact
 */
-// TODO: look into Date types
+
 interface JobProps {
   companyName: string
   jobTitle: string
@@ -33,8 +33,9 @@ export default function JobCard({
   referal,
   referalName
 }: JobProps) {
-  //TODO: define the job object
   //TODO: add real styles to component
+  //TODO: add logic for delete and edit buttons
+  //TODO: maybe hide empty fields
 
   return (
     <div className={jobCardStyles.jobCard}>
@@ -47,9 +48,11 @@ export default function JobCard({
       <p>Second Interview</p>
       <p>Second Interview Date</p>
       <p>Coding Exercise: {codingExercise}</p>
-      <p>Rejection Email: {rejectionEmail}</p>
+      <p>Rejection Email: {rejectionEmail ? 'Yes' : ''}</p>
       <p>referal: {referal}</p>
       <p>Referal Name: {referalName}</p>
+      <button>Edit</button>
+      <button>Delete</button>
     </div>
   )
 }

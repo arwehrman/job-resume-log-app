@@ -1,0 +1,23 @@
+.jobList {
+  margin: 20px;
+  padding: 20px;
+}
+
+.jobList ul {
+  display: flex;
+  list-style-type: none;
+}
+
+.active {
+  border: 5px solid #9bc53d;
+  background-color: #9bc53d;
+}
+
+.rejected {
+  border: 3px solid #c3423f;
+  background-color: #c3423f;
+}
+
+.jobStatus {
+  font-family: var(--font-sora-bold);
+}
