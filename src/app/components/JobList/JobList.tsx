@@ -29,7 +29,9 @@ export default function JobList<T>({
 }: JobListProps<T>) {
   return (
     <div className={JobListStyles.jobList}>
-      <h2>{category} Applications List: </h2>
+      <h2 className={JobListStyles.jobStatus}>
+        {category} Applications List:{' '}
+      </h2>
       <ul>
         {items.map((item, i) => (
           <li key={i}>{renderItem(item)}</li>

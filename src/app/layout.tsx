@@ -5,12 +5,12 @@ import './styles/globals.scss'
 const soraBold = localFont({
   src: './styles/fonts/Sora-Bold.ttf',
   variable: '--font-sora-bold',
-  weight: '100 900'
+  weight: '700'
 })
 const soraReg = localFont({
   src: './styles/fonts/Sora-Regular.ttf',
   variable: '--font-sora-reg',
-  weight: '100 900'
+  weight: '400'
 })
 
 export const metadata: Metadata = {
