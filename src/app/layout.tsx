@@ -1,6 +1,6 @@
 import type { Metadata } from 'next'
 import localFont from 'next/font/local'
-import './styles/globals.scss'
+import './styles/globals.css'
 
 const soraBold = localFont({
   src: './styles/fonts/Sora-Bold.ttf',

@@ -1,6 +1,6 @@
 import { type ReactNode } from 'react'
 
-import styles from './JobList.module.scss'
+import styles from './JobList.module.css'
 /* 
 Job List will have the following: 
 - list of jobs applied for
