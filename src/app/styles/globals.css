@@ -24,8 +24,8 @@
   --warning-content: #000000;
   --error-content: #fbd6d6;
 }
-
-@media (prefers-color-scheme: dark) {
+/* revisit light/dark mode */
+/* @media (prefers-color-scheme: dark) {
   :root {
     --background: #18181b;
     --foreground: #232529;
@@ -34,7 +34,7 @@
     --copy-light: #d6d7dc;
     --copy-lighter: #9fa2ac;
   }
-}
+} */
 
 html,
 body {

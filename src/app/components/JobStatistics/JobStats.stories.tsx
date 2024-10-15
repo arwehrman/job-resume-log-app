@@ -11,6 +11,7 @@ const meta = {
 export default meta
 type Story = StoryObj<typeof meta>
 
+// TODO: this data should come from calculations of the actual data
 export const JobStatsStory: Story = {
   args: {
     jobsApplied: 43,

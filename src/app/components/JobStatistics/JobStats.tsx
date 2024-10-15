@@ -10,6 +10,8 @@ type JobStatProps = {
   daysUnemployed: number
 }
 
+/* This could eventually be a chart utilizing a charting library like Chart.js, Victory  */
+
 export default function JobStatistics({
   jobsApplied,
   totalActiveApplications,

@@ -1,5 +1,6 @@
 import Input from './Input'
 import { type FormEvent } from 'react'
+import styles from './JobForm.module.css'
 //TODO: create handler function for form submit
 //TODO: add styles to form and inputs
 //REFACTOR: make button as a reusable component
@@ -12,7 +13,7 @@ export default function JobForm() {
   }
 
   return (
-    <form>
+    <form className={styles.jobForm}>
       <h2>Add a job</h2>
       <div>
         <Input label="Company Name" inputType="text" inputName="companyName" />

@@ -34,30 +34,26 @@ export default function Home() {
     <div className={styles.page}>
       <Header title="Mandy's Job Log" />
       <main className={styles.main}>
-        <div>
-          <section>
-            <JobList
-              items={activeJobs}
-              renderItem={JobCard}
-              isActive={true}
-              jobStatus="active"
-            />
-          </section>
-          <section>
-            <JobList
-              items={rejectedJobs}
-              renderItem={JobCard}
-              isActive={false}
-              jobStatus="rejected"
-            />
-          </section>
-          <aside>
-            <JobStatistics {...stats} />
-          </aside>
-          <section>
-            <JobForm />
-          </section>
-        </div>
+        <section>
+          <JobList
+            items={activeJobs}
+            renderItem={JobCard}
+            isActive={true}
+            jobStatus="active"
+          />
+          <JobList
+            items={rejectedJobs}
+            renderItem={JobCard}
+            isActive={false}
+            jobStatus="rejected"
+          />
+        </section>
+        <aside>
+          <JobStatistics {...stats} />
+        </aside>
+        <section>
+          <JobForm />
+        </section>
       </main>
     </div>
   )

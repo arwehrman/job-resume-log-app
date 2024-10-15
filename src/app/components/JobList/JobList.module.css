@@ -9,15 +9,16 @@
 }
 
 .active {
-  border: 5px solid #9bc53d;
-  background-color: #9bc53d;
+  border: 5px solid var(--border);
+  background-color: var(--primary-content);
 }
 
 .rejected {
-  border: 3px solid #c3423f;
-  background-color: #c3423f;
+  border: 3px solid var(--border);
+  background-color: var(--secondary-content);
 }
 
 .jobStatus {
+  color: var(--copy);
   font-family: var(--font-sora-bold);
 }
