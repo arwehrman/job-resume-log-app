@@ -2,7 +2,9 @@
 
 ## Introduction
 
-This app is a work in progress to use as a portfolio piece to showcase my React, TypesScript, CSS and StorybookJS skills as I look for my next developer role.
+THIS APP IS A WORK IN PROGRESS AND CURRENTLY IS NOT A COMPLETE WORKING APPLICATION
+
+Creating this app to solve two things, create a portfolio piece to showcase my React, TypesScript, CSS and StorybookJS skills and keep track of jobs I've applied for during my job search.
 
 ## Tech Stack
 
