@@ -9,29 +9,25 @@ Job Card will have the following:
 */
 
 interface JobProps {
+  id: number
   companyName: string
   jobTitle: string
   postLink: string
   dateApplied: string
   interview: boolean
-  intervewDate: string
-  codingExercise: boolean
+  interviewDate: string
   rejectionEmail: boolean
-  referal: boolean
-  referalName: string
 }
 
 export default function JobCard({
+  id,
   companyName,
   jobTitle,
   postLink,
   dateApplied,
   interview,
-  intervewDate,
-  codingExercise,
-  rejectionEmail,
-  referal,
-  referalName
+  interviewDate,
+  rejectionEmail
 }: JobProps) {
   //TODO: add real styles to component
   //TODO: add logic for delete and edit buttons
@@ -39,18 +35,14 @@ export default function JobCard({
 
   return (
     <div className={jobCardStyles.jobCard}>
+      <p>ID REMOVE THIS AFTER TESTING{id}</p>
       <p>Company Name: {companyName}</p>
       <p>Job Title: {jobTitle}</p>
       <p>Job Post Link: {postLink}</p>
       <p>Date Applied: {dateApplied}</p>
       <p>Interview: {interview}</p>
-      <p>Interview Date: {intervewDate}</p>
-      <p>Second Interview</p>
-      <p>Second Interview Date</p>
-      <p>Coding Exercise: {codingExercise}</p>
-      <p>Rejection Email: {rejectionEmail ? 'Yes' : ''}</p>
-      <p>referal: {referal}</p>
-      <p>Referal Name: {referalName}</p>
+      <p>Interview Date: {interviewDate}</p>
+      <p>Rejection Email: {rejectionEmail}</p>
       <button>Edit</button>
       <button>Delete</button>
     </div>

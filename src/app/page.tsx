@@ -1,13 +1,26 @@
+'use client'
 import styles from './page.module.css'
 import JobList from './components/JobList/JobList'
 import JobCard from './components/JobCard/JobCard'
 import JobForm from './components/JobForm/JobForm'
 import JobStatistics from './components/JobStatistics/JobStats'
 import Header from './components/Header/Header'
-import jobs from './data.json'
+//import jobs from './data.json'
+import { useState } from 'react'
 
 //TODO: Connect to a data API instead of dummy data json feed
 //TODO: Solidfy CSS/SASS into coherent patterns
+
+export type JobCard = {
+  id: number
+  companyName: string
+  jobTitle: string
+  postLink: string
+  dateApplied: string
+  interview: boolean
+  interviewDate: string
+  rejectionEmail: boolean
+}
 
 // dummy data for stats will move API with rest of the data
 const stats = {
@@ -21,7 +34,34 @@ const stats = {
 }
 
 export default function Home() {
-  //REFACTOR: May refactor this into drier option
+  const [jobs, setJobs] = useState<JobCard[]>([])
+
+  function handleAddJob(
+    id: number,
+    companyName: string,
+    jobTitle: string,
+    postLink: string,
+    dateApplied: string,
+    interview: boolean,
+    interviewDate: string,
+    rejectionEmail: boolean
+  ) {
+    setJobs((prevJobs) => {
+      const newJob: JobCard = {
+        id: Math.random(),
+        companyName: companyName,
+        jobTitle: jobTitle,
+        postLink: postLink,
+        dateApplied: dateApplied,
+        interview: interview,
+        interviewDate: interviewDate,
+        rejectionEmail: rejectionEmail
+      }
+      return [...prevJobs, newJob]
+    })
+  }
+
+  //REFACTOR: need to use
   let rejectedJobs = jobs.filter((job) => {
     return job.rejectionEmail
   })
@@ -52,7 +92,7 @@ export default function Home() {
           <JobStatistics {...stats} />
         </aside>
         <section>
-          <JobForm />
+          <JobForm onAddJob={handleAddJob} />
         </section>
       </main>
     </div>
