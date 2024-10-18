@@ -5,7 +5,6 @@ import JobCard from './components/JobCard/JobCard'
 import JobForm from './components/JobForm/JobForm'
 import JobStatistics from './components/JobStatistics/JobStats'
 import Header from './components/Header/Header'
-//import jobs from './data.json'
 import { useState } from 'react'
 
 //TODO: Connect to a data API instead of dummy data json feed
