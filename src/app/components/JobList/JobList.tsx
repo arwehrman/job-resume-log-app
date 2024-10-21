@@ -29,9 +29,11 @@ export default function JobList<T>({
   jobStatus,
   isActive
 }: JobListProps<T>) {
+  // class styles depending on status of job
   const jobListStyles = !isActive
     ? `${styles.jobList} ${styles.rejected}`
     : `${styles.jobList} ${styles.active}`
+
   return (
     <div className={jobListStyles}>
       <h2 className={styles.jobStatus}>{jobStatus} Applications List:</h2>
