@@ -1,17 +1,17 @@
 import type { Meta, StoryObj } from '@storybook/react'
 
-import JobCard from './JobCard'
+import Job from './Job'
 
 const meta = {
-  title: 'Components/JobCard',
-  component: JobCard,
+  title: 'Components/Job',
+  component: Job,
   args: {}
-} satisfies Meta<typeof JobCard>
+} satisfies Meta<typeof Job>
 
 export default meta
 type Story = StoryObj<typeof meta>
 
-export const JobCardStory: Story = {
+export const JobStory: Story = {
   args: {
     companyName: 'ABC',
     jobTitle: 'developer',

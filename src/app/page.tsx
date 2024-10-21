@@ -1,7 +1,7 @@
 'use client'
 import styles from './page.module.css'
 import JobList from './components/JobList/JobList'
-import JobCard from './components/JobCard/JobCard'
+import JobCard from './components/Job/Job'
 import JobForm from './components/JobForm/JobForm'
 import JobStatistics from './components/JobStatistics/JobStats'
 import Header from './components/Header/Header'

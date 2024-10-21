@@ -1,8 +1,8 @@
-import jobCardStyles from './JobCard.module.css'
+import jobStyles from './Job.module.css'
 
 /* 
-Job Card will have the following: 
-- job details
+Job will have the following: 
+- details
 - edit button
 - delete/archive button
 - referal could be another object, like a contact
@@ -19,7 +19,7 @@ interface JobProps {
   rejectionEmail: boolean
 }
 
-export default function JobCard({
+export default function Job({
   id,
   companyName,
   jobTitle,
@@ -34,7 +34,7 @@ export default function JobCard({
   //TODO: maybe hide empty fields
 
   return (
-    <div className={jobCardStyles.jobCard}>
+    <div className={jobStyles.job}>
       <p>ID REMOVE THIS AFTER TESTING{id}</p>
       <p>Company Name: {companyName}</p>
       <p>Job Title: {jobTitle}</p>
