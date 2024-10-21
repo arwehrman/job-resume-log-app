@@ -18,7 +18,7 @@ export const JobStory: Story = {
     postLink: 'www.example.com',
     dateApplied: 'date',
     interview: false,
-    intervewDate: 'date',
+    interviewDate: 'date',
     codingExercise: false,
     rejectionEmail: false,
     referal: false,
